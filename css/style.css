@@ -1,0 +1,140 @@
+:root {
+	--accent-color: #404bbf;
+	--iris-color: #4d5ae5;
+	--cloud-color: #f4f4fd;
+	--primary-text-color-theme-dark: #ffffff;
+	--title-color: #2e2f42;
+	--description-color: #434455;
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+	color: inherit;
+	font-style: normal;
+}
+
+.link:visited {
+	color: var(--title-color);
+}
+.link:active,
+.order-btn:active,
+.filter-btn:active {
+	color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
+	color: var(--accent-color);
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: var(--description-color);
+}
+
+/* components */
+
+/* header */
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.17;
+	align-items: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.span-web {
+	color: var(--iris-color);
+}
+
+.menu-link,
+.mail-tel {
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.hero {
+	background-color: var(--title-color);
+}
+.main-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color-theme-dark);
+}
+
+.order-btn {
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 500;
+	line-height: 1.5;
+	align-items: center;
+	letter-spacing: 0.04em;
+	color: var(--primary-text-color-theme-dark);
+	background-color: var(--iris-color);
+}
+
+.order-btn:focus,
+.order-btn:hover {
+	color: var(--accent-color);
+}
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--title-color);
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--title-color);
+}
+
+.description {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.footer {
+	/* background: color: var(--title-color); */
+}
+
+.description-footer {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	/* color: var(--cloud-color); */
+}
+
+.filter-btn {
+	font-weight: 500;
+	line-height: 1.5;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	background-color: var(--cloud-color);
+	color: var(--iris-color);
+}
+.filter-btn:focus,
+.filter-btn:hover {
+	color: var(--accent-color);
+	color: var(--primary-text-color-theme-dark);
+}
+
+.works-img {
+	width: 360px;
+	height: 300px;
+}
