@@ -10,30 +10,33 @@
 
 .list {
 	list-style: none;
+	background-color: (--main-background-color);
 }
 .link {
 	text-decoration: none;
 	color: inherit;
-	font-style: normal;
 }
 
 .link:visited {
 	color: inherit;
 }
+.link:hover,
+.link:focus,
 .link:active,
 .order-btn:active,
 .filter-btn:active {
 	color: var(--accent-color);
 }
 
-.link:hover,
-.link:focus {
-	color: var(--accent-color);
+.span-web:hover,
+.span-web:focus,
+.span-web-footer:hover,
+.span-web-footer:focus {
+	color: var(--iris-color);
 }
 
 body {
 	font-family: "Roboto", sans-serif;
-	font-size: 16px;
 	color: var(--description-color);
 	background-color: var(--main-background-color);
 }
@@ -43,6 +46,7 @@ body {
 /* header */
 .logo {
 	font-family: "Raleway", sans-serif;
+	color: var(--iris-color);
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.17;
@@ -51,8 +55,15 @@ body {
 	text-transform: uppercase;
 }
 
-.span-web {
+.logo:visited {
 	color: var(--iris-color);
+}
+
+.span-web {
+	color: var(--title-color);
+}
+.span-web-footer {
+	color: var(--cloud-color);
 }
 
 .menu-link,
@@ -79,7 +90,7 @@ body {
 	cursor: pointer;
 	font-weight: 500;
 	line-height: 1.5;
-	align-items: center;
+	font-size: 16px;
 	letter-spacing: 0.04em;
 	color: var(--primary-text-color-theme-dark);
 	background-color: var(--iris-color);
@@ -87,7 +98,7 @@ body {
 
 .order-btn:focus,
 .order-btn:hover {
-	color: var(--accent-color);
+	background-color: var(--accent-color);
 }
 .title {
 	font-weight: 700;
@@ -97,6 +108,10 @@ body {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--title-color);
+}
+
+.contacts {
+	font-style: normal;
 }
 
 .about-img {
