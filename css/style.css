@@ -17,6 +17,12 @@
 	color: inherit;
 }
 
+button {
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+}
+
 .link:visited {
 	color: inherit;
 }
@@ -140,10 +146,8 @@ body {
 	height: 260px;
 }
 .description {
-	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--description-color);
 }
 .footer {
 	background-color: var(--title-color);
