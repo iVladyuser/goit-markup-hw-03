@@ -71,7 +71,7 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--title-color);
+	color: var(--description-color);
 }
 
 .hero {
@@ -128,6 +128,9 @@ body {
 	color: var(--title-color);
 }
 
+.team-list {
+	background-color: #ffffff;
+}
 .our-team {
 	background-color: var(--cloud-color);
 }
@@ -137,8 +140,10 @@ body {
 	height: 260px;
 }
 .description {
+	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	color: var(--description-color);
 }
 .footer {
 	background-color: var(--title-color);
@@ -151,6 +156,7 @@ body {
 }
 
 .filter-btn {
+	font-size: 16px;
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.5;
