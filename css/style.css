@@ -77,7 +77,10 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--title-color);
+}
+
+.contacts-link {
+	color: var(--description-color);
 }
 
 .hero {
@@ -148,6 +151,7 @@ body {
 .description {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	color: var(--description-color);
 }
 .footer {
 	background-color: var(--title-color);
