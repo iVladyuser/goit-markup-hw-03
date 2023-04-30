@@ -77,7 +77,7 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--description-color);
+	color: var(--title-color);
 }
 
 .hero {
@@ -134,7 +134,7 @@ body {
 	color: var(--title-color);
 }
 
-.team-list {
+.team-item {
 	background-color: #ffffff;
 }
 .our-team {
@@ -169,6 +169,7 @@ body {
 	letter-spacing: 0.04em;
 	background-color: var(--cloud-color);
 	color: var(--iris-color);
+	cursor: pointer;
 }
 .filter-btn:focus,
 .filter-btn:hover {
