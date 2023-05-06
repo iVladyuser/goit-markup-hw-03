@@ -67,7 +67,6 @@ body {
 	list-style: none;
 	background-color: (--main-background-color);
 	display: flex;
-	gap: 24px;
 }
 .link {
 	text-decoration: none;
@@ -129,6 +128,7 @@ body {
 .logo-header {
 	padding-top: 24px;
 	padding-bottom: 24px;
+	margin-right: 76px;
 }
 
 .logo:visited {
@@ -137,17 +137,14 @@ body {
 
 .nav-header {
 	display: flex;
+	align-items: center;
 }
 
 .menu {
 	display: flex;
-	margin-left: 76px;
-	align-items: center;
+	gap: 40px;
 }
 
-.menu-item + .menu-item {
-	margin-left: 40px;
-}
 .span-web {
 	color: var(--title-color);
 }
@@ -161,6 +158,9 @@ body {
 	margin-left: auto;
 	padding-top: 24px;
 	padding-bottom: 24px;
+}
+.mail-tel {
+	gap: 40px;
 }
 
 .contacts {
@@ -177,19 +177,22 @@ body {
 
 /*=================== main =======================*/
 .hero {
-	text-align: center;
 	padding-top: 188px;
 	padding-bottom: 188px;
+	text-align: center;
 }
 .main-title {
+	max-width: 496px;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
+	text-align: center;
 	/* color: var(--primary-text-color-theme-dark); */
 }
 
 .order-btn {
+	display: block;
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.5;
@@ -215,10 +218,7 @@ body {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--title-color);
-}
-
-.about-img {
-	margin-top: 72px;
+	margin-bottom: 72px;
 }
 
 .subtitle {
@@ -227,6 +227,7 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--title-color);
+	margin-bottom: 8px;
 }
 
 .in-progress {
@@ -239,12 +240,12 @@ body {
 
 .team-list {
 	display: flex;
-	margin-top: 72px;
 }
 
 .team-item {
 	background-color: #ffffff;
 	width: calc((100% - (3 * 24px)) / 4);
+	border-radius: 0px 0px 4px 4px;
 }
 
 .content {
@@ -262,13 +263,17 @@ body {
 .footer {
 	background-color: var(--title-color);
 	color: var(--cloud-color);
-	padding: 100px 0 100px 156px;
+	padding: 100px 0;
 }
 
 .container-footer {
 	max-width: 264px;
-	/* padding: 0; */
-	/* margin: 0; */
+	margin: 0;
+}
+
+.link-footer {
+	display: inline-block;
+	margin-bottom: 16px;
 }
 .span-web-footer {
 	color: var(--cloud-color);
@@ -308,6 +313,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 24px;
+	margin-bottom: 72px;
 }
 .works {
 	flex-wrap: wrap;
