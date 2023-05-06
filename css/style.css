@@ -304,7 +304,7 @@ body {
 	color: var(--primary-text-color-theme-dark);
 }
 
-.filter {
+.filter-list {
 	display: flex;
 	justify-content: center;
 	gap: 24px;
