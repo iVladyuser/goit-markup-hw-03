@@ -6,6 +6,7 @@
 	--title-color: #2e2f42;
 	--description-color: #434455;
 	--main-background-color: #ffffff;
+	--border-button: #e7e9fc;
 }
 
 h1,
@@ -179,15 +180,14 @@ body {
 .hero {
 	padding-top: 188px;
 	padding-bottom: 188px;
-	text-align: center;
 }
 .main-title {
+	text-align: center;
 	max-width: 496px;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
-	text-align: center;
 	/* color: var(--primary-text-color-theme-dark); */
 }
 
@@ -230,16 +230,27 @@ body {
 	margin-bottom: 8px;
 }
 
+.list-about {
+	gap: 24px;
+}
+
+.item-about {
+	width: calc((100% - 72px) / 4);
+}
 .in-progress {
 	padding-bottom: 120px;
 }
 
+.progress-list {
+	gap: 24px;
+}
 .our-team {
 	background-color: var(--cloud-color);
 }
 
 .team-list {
 	display: flex;
+	gap: 24px;
 }
 
 .team-item {
@@ -268,7 +279,6 @@ body {
 
 .container-footer {
 	max-width: 264px;
-	margin: 0;
 }
 
 .link-footer {
@@ -287,10 +297,6 @@ body {
 .portfolio {
 	padding-top: 96px;
 	padding-bottom: 120px;
-
-	.filter {
-		margin-bottom: 72px;
-	}
 }
 .filter-btn {
 	padding: 12px 24px;
@@ -302,11 +308,13 @@ body {
 	letter-spacing: 0.04em;
 	background-color: var(--cloud-color);
 	color: var(--iris-color);
+	border: 1px solid var(--border-button);
 }
 .filter-btn:focus,
 .filter-btn:hover {
 	background-color: var(--accent-color);
 	color: var(--primary-text-color-theme-dark);
+	border: 1px solid transparent;
 }
 
 .filter-list {
@@ -317,6 +325,8 @@ body {
 }
 .works {
 	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
 }
 
 .works-item {
@@ -324,14 +334,14 @@ body {
 }
 
 .gallery-descrip {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 16px;
+	padding: 32px 16px;
 	border-bottom: 1px solid #e7e9fc;
 	border-right: 1px solid #e7e9fc;
 	border-left: 1px solid #e7e9fc;
 }
 .gallery-title {
+	margin-bottom: 8px;
+
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
