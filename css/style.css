@@ -152,7 +152,7 @@ body {
 
 .menu-link,
 .mail-tel {
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--title-color);
@@ -178,9 +178,29 @@ body {
 
 /*=================== main =======================*/
 .hero {
+	background-color: var(--title-color);
+}
+.hero-bg {
+	height: 600px;
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: linear-gradient(
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)
+		),
+		url(../images/hero-bg-image.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero-container {
 	padding-top: 188px;
 	padding-bottom: 188px;
 }
+
+/*=================== about =======================*/
 .main-title {
 	text-align: center;
 	max-width: 496px;
@@ -188,7 +208,8 @@ body {
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
-	/* color: var(--primary-text-color-theme-dark); */
+	color: var(--primary-text-color-theme-dark);
+	margin: 0 auto;
 }
 
 .order-btn {
@@ -200,6 +221,7 @@ body {
 	color: var(--primary-text-color-theme-dark);
 	background-color: var(--iris-color);
 	padding: 16px 32px;
+	margin: 0 auto;
 	min-width: 169px;
 	margin-top: 48px;
 	border-radius: 4px;
@@ -230,6 +252,16 @@ body {
 	margin-bottom: 8px;
 }
 
+.about-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 112px;
+	max-width: 264px;
+	background-color: var(--cloud-color);
+	margin-bottom: 8px;
+}
+
 .list-about {
 	gap: 24px;
 }
@@ -237,6 +269,9 @@ body {
 .item-about {
 	width: calc((100% - 72px) / 4);
 }
+
+/*=================== in-progress =======================*/
+
 .in-progress {
 	padding-bottom: 120px;
 }
@@ -244,6 +279,9 @@ body {
 .progress-list {
 	gap: 24px;
 }
+
+/*=================== our team =======================*/
+
 .our-team {
 	background-color: var(--cloud-color);
 }
@@ -257,6 +295,8 @@ body {
 	background-color: #ffffff;
 	width: calc((100% - (3 * 24px)) / 4);
 	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .content {
@@ -269,6 +309,63 @@ body {
 	color: var(--description-color);
 }
 
+.social-list {
+	display: flex;
+	justify-content: center;
+	column-gap: 24px;
+	margin-top: 8px;
+}
+.social-list-link {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--iris-color);
+	justify-content: center;
+	align-items: center;
+}
+
+.social-link {
+	align-items: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+	background-color: var(--accent-color);
+}
+
+.social-list-icon {
+	fill: #fff;
+}
+
+/*=================== costumers =======================*/
+
+.customers-list {
+	display: flex;
+	justify-content: center;
+	column-gap: 24px;
+}
+
+.customers-item {
+	display: flex;
+	height: 88px;
+	width: 168px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+	fill: var(--accent-color);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+	border: 1px solid var(--accent-color);
+}
+
 /*=================== footer =======================*/
 
 .footer {
@@ -278,7 +375,9 @@ body {
 }
 
 .container-footer {
-	max-width: 264px;
+	display: flex;
+	justify-content: flex-start;
+	column-gap: 120px;
 }
 
 .link-footer {
@@ -292,8 +391,16 @@ body {
 .description-footer {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	max-width: 264px;
 }
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+	background-color: #31d0aa;
+}
+
 /*===================portfolio =======================*/
+
 .portfolio {
 	padding-top: 96px;
 	padding-bottom: 120px;
@@ -315,6 +422,8 @@ body {
 	background-color: var(--accent-color);
 	color: var(--primary-text-color-theme-dark);
 	border: 1px solid transparent;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list {
@@ -331,6 +440,12 @@ body {
 
 .works-item {
 	width: calc((100% - 48px) / 3);
+}
+
+.works-item:hover,
+.works-item:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-descrip {
